@@ -1,0 +1,29 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.8.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'br.unip.ads.pim'
+version = '1.0.0'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// Spring Data JPA (Repositories, Entities, Hibernate etc)
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// Spring Web (REST)
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// Driver de Banco de Dados
+	runtimeOnly('mysql:mysql-connector-java')
+	// Swagger (documentacao de API): https://github.com/swagger-api/swagger-ui
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+	
+	// Modulos de Testes
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+}

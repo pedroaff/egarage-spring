@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="unip-2019-2-ads-template-pim.main" target="1.8" />
+      <module name="unip-2019-2-ads-template-pim.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
